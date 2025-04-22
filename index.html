@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarzan Imitation Jewellery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* Header */
+        header {
+            background-color: #111;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('hero.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            color: #ff6347;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        /* Product Section */
+        .product-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .product-card {
+            background-color: white;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            font-size: 1.6em;
+            margin-top: 15px;
+        }
+
+        .product-card p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .product-card button {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .product-card button:hover {
+            background-color: #e53e36;
+        }
+
+        /* Offers Section */
+        .offers {
+            background-color: #f1f1f1;
+            padding: 40px 20px;
+        }
+
+        .offer-cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .offer-card {
+            background-color: #ff6347;
+            padding: 30px;
+            width: 30%;
+            text-align: center;
+            border-radius: 10px;
+            color: white;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .offer-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .offer-card p {
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .contact a {
+            color: #ff6347;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 1200px) {
+            .product-card {
+                width: 45%;
+            }
+            .offer-card {
+                width: 45%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero h1 {
+                font-size: 3em;
+            }
+
+            .product-card {
+                width: 100%;
+            }
+
+            .offer-card {
+                width: 100%;
+            }
+
+            .product-list {
+                flex-direction: column;
+                gap: 40px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .product-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .offers {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#earrings">Earrings</a></li>
+                <li><a href="#necklaces">Necklaces</a></li>
+                <li><a href="#bangles">Bangles</a></li>
+                <li><a href="#mang-tika">Mang Tika</a></li>
+                <li><a href="#dailywear-chain">Dailywear Chains</a></li>
+                <li><a href="#diamond-jewellery">Diamond Jewellery</a></li>
+                <li><a href="#kundan-jewellery">Kundan Jewellery</a></li>
+                <li><a href="#oxidized-jewellery">Oxidized Jewellery</a></li>
+                <li><a href="#bridal-sets">Bridal Sets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Discover Timeless Beauty</h1>
+        <p>Elegant and Vibrant Imitation Jewellery for Every Occasion</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="bio" id="bio">
+        <h2>About Us</h2>
+        <p>At Tarzan Imitation Jewellery, we offer a wide variety of imitation jewellery crafted with the finest materials and designed to fit every occasion. Our collection includes everything from daily wear chains to stunning bridal sets, all at affordable prices.</p>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers" id="offers">
+        <h2>Exclusive Offers</h2>
+        <div class="offer-cards">
+            <div class="offer-card">
+                <img src="offer1.jpg" alt="Offer 1">
+                <p>50% OFF on Bridal Sets!</p>
+            </div>
+            <div class="offer-card">
+                <img src="offer2.jpg" alt="Offer 2">
+                <p>Buy 1, Get 1 FREE on Earrings</p>
+            </div>
+            <div class="offer-card">
+                <img src="offer3.jpg" alt="Offer 3">
+                <p>Flat 30% OFF on Diamond Jewellery</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Sections -->
+    <section id="earrings">
+        <h2 class="section-title">Earrings</h2>
+        <div class="product-list">
+            <!-- Product Example -->
+            <div class="product-card">
+                <img src="earring1.jpg" alt="Gold Earrings">
+                <h3>Gold Earrings</h3>
+                <p>$100
